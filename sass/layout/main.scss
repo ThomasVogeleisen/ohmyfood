@@ -8,6 +8,32 @@
 
 .fonctionnement-card{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 322px;
+    height: 72px;
+    margin: auto;
+    margin-top: 25px;
+    font-weight: 500;
+    background-color: $color-grey-1;
     @include box-shadows;
     @include fonctionnement-form;
+    &__number{
+        position: relative;
+        right: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+        color: #FFF;
+        font-size: 0.875rem;
+        background: $color-primary;
+    }
+    &__img{
+        height: 19px;
+        margin-left: 5px;
+        margin-right: 25px;
+    }
 }
