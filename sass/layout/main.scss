@@ -1,0 +1,13 @@
+.section-fonctionnement{
+    padding: 48px 20px 68px 20px;
+    &__title{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.fonctionnement-card{
+    display: flex;
+    @include box-shadows;
+    @include fonctionnement-form;
+}

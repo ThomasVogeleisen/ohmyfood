@@ -69,4 +69,18 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.section-fonctionnement {
+  padding: 48px 20px 68px 20px;
+}
+.section-fonctionnement__title {
+  padding: 0;
+  margin: 0;
+}
+
+.fonctionnement-card {
+  display: flex;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
