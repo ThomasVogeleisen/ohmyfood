@@ -37,3 +37,73 @@
         margin-right: 25px;
     }
 }
+
+.section-restaurants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    background-color: $color-grey-1;
+}
+
+.restaurant-links {
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 490px;
+}
+
+.article-restaurant {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+    &__img{
+        display: inline;
+        height: 231px;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__newlogo{
+        @include box-shadows;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        border-radius: 2px;
+        color: $color-green;
+        background-color: $color-third;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 7px 9px;
+        width: 80px;
+    }
+}
+
+.article-restaurant-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__txt{
+        padding: 0 0 0 13px;
+        &--title{
+            margin: 16px 0 5px 0;
+        }
+        &--subtitle{
+            margin-top: 0;
+        }
+    }
+    &__heart{
+        margin-top: 23px;
+        margin-right: 25px;
+        &--img{
+            color: red;
+            background-color: #FFF;
+        }
+    }
+}
