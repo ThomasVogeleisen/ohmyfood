@@ -27,7 +27,7 @@ body {
   background-color: #EAEAEA;
 }
 .bloc-map__map-icon {
-  width: 12px;
+  margin-top: 15px;
   margin-right: 17px;
 }
 
@@ -104,9 +104,11 @@ body {
   background: #9356DC;
 }
 .fonctionnement-card__img {
-  height: 19px;
-  margin-left: 5px;
-  margin-right: 25px;
+  margin: 0 25px 5px 10px;
+  color: #7E7E7E;
+}
+.fonctionnement-card__img-store {
+  color: #9356DC;
 }
 
 .section-restaurants {

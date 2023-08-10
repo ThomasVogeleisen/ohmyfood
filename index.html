@@ -3,46 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href=".\assets\style.css" rel="stylesheet" />
+    <link href="./assets/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>homyfood</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
+        <!-- LOGO -->
         <div class="bloc-logo">
-            <img class="bloc-logo__logo" src=".\assets\logo\ohmyfood@2x.svg" alt="Logo homyfood">
+            <img class="bloc-logo__logo" src="./assets/logo/ohmyfood@2x.svg" alt="Logo homyfood">
         </div>
+        <!-- LOCATION -->
         <div class="bloc-map">
-            <img class="bloc-map__map-icon" src=".\assets\icon\map.svg" alt="Icone map">
+            <i class="fa-solid fa-location-dot bloc-map__map-icon"></i>
             <p>Paris, Belleville</p>
         </div>
+        <!-- CTO -->
         <div class="bloc-action">
             <h1 class="bloc-action__title">Réservez le menu qui vous convient</h1>
             <p class="bloc-action__subtitle">Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <button class="bloc-action__button">Explorer nos restaurants</button>
         </div>
     </header>
+
+    <!-- MAIN -->
     <main>
+
+        <!-- SECTION FONCTIONNEMENT -->
         <section class="section-fonctionnement">
             <h1 class="section-fonctionnement__title">Fonctionnement</h1>
             <div class="section-fonctionnement__etapes">
                 <div class="fonctionnement-card">
                     <span class="fonctionnement-card__number">1</span>
-                    <img class="fonctionnement-card__img" src=".\assets\icon\mobile.svg" alt="">
+                    <i class="fa-solid fa-mobile-screen-button fa-lg fonctionnement-card__img"></i>
                     <p class="fonctionnement-card__text">Choisissez un restaurant</p>
                 </div>
                 <div class="fonctionnement-card">
                     <span class="fonctionnement-card__number">2</span>
-                    <img class="fonctionnement-card__img" src=".\assets\icon\list.svg" alt="">
+                    <i class="fa-solid fa-list-ul fa-lg fonctionnement-card__img"></i>
                     <p class="fonctionnement-card__text">Composez votre menu</p>
                 </div>
                 <div class="fonctionnement-card">
                     <span class="fonctionnement-card__number">3</span>
-                    <img class="fonctionnement-card__img" src=".\assets\icon\store.svg" alt="">
+                    <i class="fa-solid fa-store fa-lg fonctionnement-card__img fonctionnement-card__img-store"></i>
                     <p class="fonctionnement-card__text">Dégustez au restaurant</p>
                 </div>
             </div>
         </section>
+        
+        <!-- SECTION RESTAURANTS -->
         <section class="section-restaurants">
             <h2>Restaurants</h2>
             <a class="restaurant-links" href="#">
