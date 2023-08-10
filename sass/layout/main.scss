@@ -1,3 +1,4 @@
+// SECTION FONCTIONNEMENT
 .section-fonctionnement{
     padding: 48px 20px 68px 20px;
     &__title{
@@ -40,12 +41,16 @@
     }
 }
 
+// SECTION RESTAURANT
 .section-restaurants{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 18px;
     background-color: $color-grey-1;
+    &__title{
+        align-self: flex-start;
+    }
 }
 
 .restaurant-links {
@@ -54,6 +59,7 @@
     border-radius: 15px;
     width: 100%;
     max-width: 490px;
+    margin-bottom: 18px;
 }
 
 .article-restaurant {
@@ -100,12 +106,19 @@
             margin-top: 0;
         }
     }
-    &__heart{
-        margin-top: 23px;
-        margin-right: 25px;
-        &--img{
-            color: red;
-            background-color: #FFF;
+}
+
+.article-heart{
+    margin-top: 35px;
+    margin-right: 55px;
+    .fa-heart{
+        position: absolute;
+    }
+    &__full{
+        opacity: 0;
+        &:hover{
+            opacity: 1;
         }
     }
+
 }

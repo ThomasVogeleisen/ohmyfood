@@ -118,6 +118,9 @@ body {
   padding: 18px;
   background-color: #F6F6F6;
 }
+.section-restaurants__title {
+  align-self: flex-start;
+}
 
 .restaurant-links {
   display: block;
@@ -125,6 +128,7 @@ body {
   border-radius: 15px;
   width: 100%;
   max-width: 490px;
+  margin-bottom: 18px;
 }
 
 .article-restaurant {
@@ -172,13 +176,19 @@ body {
 .article-restaurant-content__txt--subtitle {
   margin-top: 0;
 }
-.article-restaurant-content__heart {
-  margin-top: 23px;
-  margin-right: 25px;
+
+.article-heart {
+  margin-top: 35px;
+  margin-right: 55px;
 }
-.article-restaurant-content__heart--img {
-  color: red;
-  background-color: #FFF;
+.article-heart .fa-heart {
+  position: absolute;
+}
+.article-heart__full {
+  opacity: 0;
+}
+.article-heart__full:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
