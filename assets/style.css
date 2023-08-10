@@ -116,6 +116,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 18px;
+  padding-bottom: 68px;
   background-color: #F6F6F6;
 }
 .section-restaurants__title {
@@ -189,6 +190,40 @@ body {
 }
 .article-heart__full:hover {
   opacity: 1;
+}
+
+footer {
+  padding: 22px 25px;
+  color: #FFF;
+  background-color: #353535;
+}
+
+.footer-title {
+  color: var(--white, #FFF);
+  font-family: Shrikhand;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer-list__element {
+  margin-top: 7px;
+}
+.footer-list__element--ustensil {
+  margin-right: 10px;
+}
+.footer-list__element--handshahe {
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
