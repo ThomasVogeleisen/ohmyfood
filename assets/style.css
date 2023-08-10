@@ -181,14 +181,20 @@ h1 {
 }
 
 .article-heart {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-right: 55px;
 }
 .article-heart .fa-heart {
   position: absolute;
+  font-size: 1.5em;
 }
 .article-heart__full {
   opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(to right, #e72c83 0%, #a742c6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 0.3s ease-in-out;
 }
 .article-heart__full:hover {
   opacity: 1;
