@@ -31,16 +31,17 @@ body {
   margin-right: 17px;
 }
 
-.bloc-action {
-  background-color: #F6F6F6;
-  padding-bottom: 57px;
-}
-.bloc-action__title {
+h1 {
   margin: 0;
   padding: 39px 40px 0px 40px;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
+}
+
+.bloc-action {
+  background-color: #F6F6F6;
+  padding-bottom: 57px;
 }
 .bloc-action__subtitle {
   margin: 0;
