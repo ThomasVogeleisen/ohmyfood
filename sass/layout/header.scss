@@ -1,5 +1,6 @@
 //HEADER
 h1{
+    flex-grow: 1;
     text-align: center;
     color: black;
     font-family: Shrikhand;
@@ -11,13 +12,19 @@ h1{
 .bloc-logo{
     display: flex;
     position: relative;
-    justify-content: center;
     align-items: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 14px 89px 13px 89px;
-    &__logo{
-        width: 197px;
-        height: auto;
+    &__back{
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $color-grey-3;
+        // MASQUER LE BOUTTON DE RETOUR
+        &--hidden{
+            display: none;
+        }
     }
 }
 
