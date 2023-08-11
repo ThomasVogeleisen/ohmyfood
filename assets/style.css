@@ -73,10 +73,13 @@ h1 {
 
 .section-fonctionnement {
   padding: 48px 20px 68px 20px;
+  margin: auto;
 }
-.section-fonctionnement__title {
+.section-fonctionnement h1 {
+  max-width: 490px;
+  margin: auto;
+  text-align: left;
   padding: 0;
-  margin: 0;
 }
 
 .fonctionnement-card {
@@ -122,7 +125,9 @@ h1 {
   background-color: #F6F6F6;
 }
 .section-restaurants__title {
-  align-self: flex-start;
+  width: 100%;
+  max-width: 490px;
+  align-self: center;
 }
 
 .restaurant-links {
@@ -174,6 +179,7 @@ h1 {
   padding: 0 0 0 13px;
 }
 .article-restaurant-content__txt--title {
+  max-width: 322px;
   margin: 16px 0 5px 0;
 }
 .article-restaurant-content__txt--subtitle {
@@ -191,7 +197,7 @@ h1 {
 .article-heart__full {
   opacity: 1;
   color: transparent;
-  background-image: linear-gradient(to right, #e72c83 0%, #a742c6 100%);
+  background-image: linear-gradient(#9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
   transition: opacity 0.3s ease-in-out;
