@@ -379,6 +379,11 @@ footer {
   margin: auto;
   justify-content: space-around;
 }
+@media (min-width: 992px) {
+  .section-menu-header {
+    padding: 35px 0 20px 0;
+  }
+}
 .section-menu-header__title {
   font-family: Shrikhand;
   font-size: 28px;
@@ -389,18 +394,19 @@ footer {
   font-size: 22px;
 }
 
-.footer-menu {
-  position: relative;
-  top: -40px;
+.article-menu__bloc-title {
+  max-width: 660px;
+  margin: auto;
 }
-
-.article-menu__title {
-  font-size: 16px;
+.article-menu__bloc-title--title {
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  max-width: 660px;
+  margin: auto;
 }
-.article-menu__underline {
+.article-menu__bloc-title--underline {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
@@ -411,10 +417,38 @@ footer {
 .article-plat {
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  max-width: 635px;
   background-color: #FFF;
   padding: 15px;
   border-radius: 15px;
+  margin-top: 12px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+}
+.article-plat__desc--title {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.125rem;
+}
+.article-plat__desc--subtitle {
+  margin: 0;
+  font-size: 0.94;
+  font-weight: 300;
+}
+.article-plat__price {
+  align-self: flex-end;
+}
+.article-plat__price--number {
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer-menu {
+  position: relative;
+  top: -40px;
 }
 
 /*# sourceMappingURL=style.css.map */

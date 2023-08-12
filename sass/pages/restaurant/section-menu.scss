@@ -22,6 +22,9 @@
     max-width: 375px;
     margin: auto;
     justify-content: space-around;
+    @media (min-width: 992px){
+        padding: 35px 0 20px 0;
+    }
     &__title{
         font-family: Shrikhand;
         font-size: 28px;
@@ -33,43 +36,64 @@
     }
 }
 
-.footer-menu{
-    position: relative;
-    top: -40px;
-}
-
 .article-menu{
-    &__title{
-        font-size: 16px;
-        font-weight: 300;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-    }
-    &__underline{
-        width: 40px;
-        height: 3px;
-        background-color: $color-third;
-        border: none; /* Supprime la bordure par défaut du <hr> */
-        margin: 0;
+    &__bloc-title{
+        max-width: 660px;
+        margin: auto;
+        &--title{
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            max-width: 660px;
+            margin: auto;
+        }
+        &--underline{
+            width: 40px;
+            height: 3px;
+            background-color: $color-third;
+            border: none; /* Supprime la bordure par défaut du <hr> */
+            margin: 0;
+        }
     }
 }
 
 .article-plat{
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    max-width: 635px;
     background-color: #FFF;
     padding: 15px;
     border-radius: 15px;
+    margin-top: 12px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
     &__desc{
         &--title{
-
+            margin: 0;
+            margin-bottom: 5px;
+            color: #000;
+            font-family: Roboto;
+            font-size: 1.125rem;
         }
         &--subtitle{
-            
+            margin: 0;
+            font-size: 0.94;
+            font-weight: 300;
         }
     }
     &__price{
-
+        align-self: flex-end;
+        &--number{
+            font-weight: 700;
+            margin: 0;
+            
+        }
     }
+}
+
+.footer-menu{
+    position: relative;
+    top: -40px;
 }
