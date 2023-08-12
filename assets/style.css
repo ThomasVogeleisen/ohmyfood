@@ -146,10 +146,35 @@ h1 {
   padding-bottom: 68px;
   background-color: #F6F6F6;
 }
+@media (min-width: 768px) {
+  .section-restaurants {
+    padding-bottom: 0px;
+    margin-bottom: -20px;
+  }
+}
 .section-restaurants__title {
   width: 100%;
   max-width: 490px;
   align-self: center;
+}
+@media (min-width: 768px) {
+  .section-restaurants__title {
+    max-width: 1100px;
+  }
+}
+.section-restaurants__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .section-restaurants__list {
+    max-width: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .restaurant-links {
@@ -159,6 +184,12 @@ h1 {
   width: 100%;
   max-width: 490px;
   margin-bottom: 18px;
+}
+@media (min-width: 768px) {
+  .restaurant-links {
+    width: 48%;
+    margin-bottom: 50px;
+  }
 }
 
 .article-restaurant {
@@ -205,7 +236,7 @@ h1 {
   margin: 16px 0 5px 0;
 }
 .article-restaurant-content__txt--subtitle {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .article-heart {
