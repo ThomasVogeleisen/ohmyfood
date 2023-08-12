@@ -103,6 +103,19 @@ h1 {
   text-align: left;
   padding: 0;
 }
+@media (min-width: 992px) {
+  .section-fonctionnement__title {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 992px) {
+  .section-fonctionnement__etapes {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+  }
+}
 
 .fonctionnement-card {
   display: flex;
@@ -136,6 +149,11 @@ h1 {
 }
 .fonctionnement-card__img-store {
   color: #9356DC;
+}
+@media (min-width: 992px) {
+  .fonctionnement-card {
+    width: 30%;
+  }
 }
 
 .section-restaurants {
