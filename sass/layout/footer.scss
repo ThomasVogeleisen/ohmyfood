@@ -2,6 +2,13 @@ footer{
     padding: 22px 25px;
     color: #FFF;
     background-color: $color-grey-3;
+    @media (min-width: 992px){
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        height: 54px;
+        padding: 30px 25px;
+    }
 }
 
 .footer-title{
@@ -10,6 +17,10 @@ footer{
     font-size: 1.125rem;
     font-weight: 400;
     margin: 0;
+    @media (min-width: 992px){
+        padding-left: 100px;
+        padding-right: 35px;
+    }
 
 }
 .footer-links{
@@ -29,5 +40,18 @@ footer{
         &--handshahe{
             margin-right: 6px;
         }
+        @media (min-width: 992px){
+            margin-right: 20px;
+        }
+    }
+    @media (min-width: 992px){
+        display: flex;
+    }
+}
+
+.partners{
+    font-weight: 500;
+    &__space{
+        margin-right: 50px;
     }
 }

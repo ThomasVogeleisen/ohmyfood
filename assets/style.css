@@ -290,6 +290,15 @@ footer {
   color: #FFF;
   background-color: #353535;
 }
+@media (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    height: 54px;
+    padding: 30px 25px;
+  }
+}
 
 .footer-title {
   color: var(--white, #FFF);
@@ -297,6 +306,12 @@ footer {
   font-size: 1.125rem;
   font-weight: 400;
   margin: 0;
+}
+@media (min-width: 992px) {
+  .footer-title {
+    padding-left: 100px;
+    padding-right: 35px;
+  }
 }
 
 .footer-links {
@@ -317,6 +332,23 @@ footer {
 }
 .footer-list__element--handshahe {
   margin-right: 6px;
+}
+@media (min-width: 992px) {
+  .footer-list__element {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .footer-list {
+    display: flex;
+  }
+}
+
+.partners {
+  font-weight: 500;
+}
+.partners__space {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
