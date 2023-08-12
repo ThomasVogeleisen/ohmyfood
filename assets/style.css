@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 * {
   font-family: "Roboto", sans-serif;
@@ -349,6 +350,71 @@ footer {
 }
 .partners__space {
   margin-right: 50px;
+}
+
+.img_restaurant {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .img_restaurant {
+    height: 375px;
+  }
+}
+
+.fiche-menu {
+  border-radius: 40px 40px 0px 0px;
+  background-color: #F6F6F6;
+  position: relative;
+  top: -40px;
+  max-width: 1055px;
+  margin: auto;
+  padding: 0 13px 0 13px;
+}
+
+.section-menu-header {
+  display: flex;
+  max-width: 375px;
+  margin: auto;
+  justify-content: space-around;
+}
+.section-menu-header__title {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+.section-menu-header__heart {
+  align-self: center;
+  font-size: 22px;
+}
+
+.footer-menu {
+  position: relative;
+  top: -40px;
+}
+
+.article-menu__title {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.article-menu__underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  border: none; /* Supprime la bordure par défaut du <hr> */
+  margin: 0;
+}
+
+.article-plat {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */
