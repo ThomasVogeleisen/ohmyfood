@@ -512,8 +512,7 @@ footer {
 }
 
 .footer-menu {
-  position: relative;
-  top: -40px;
+  margin-top: -40px;
 }
 
 /*# sourceMappingURL=style.css.map */
