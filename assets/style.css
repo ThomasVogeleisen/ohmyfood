@@ -270,23 +270,16 @@ h1 {
   font-size: 1.5em;
 }
 .article-heart__full {
-  opacity: 1;
+  opacity: 0;
   color: transparent;
   background-image: linear-gradient(#9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
   transition: opacity 0.3s ease-in-out;
 }
-.custom-checkbox input[type=checkbox], .custom-checkbox .checked {
-  display: none;
-}
-
-.custom-checkbox input[type=checkbox]:checked ~ .checked {
-  display: inline-block;
-}
-
-.custom-checkbox input[type=checkbox]:checked ~ .unchecked {
-  display: none;
+.article-heart__full:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 footer {

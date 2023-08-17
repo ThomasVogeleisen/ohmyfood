@@ -161,28 +161,16 @@
         font-size: 1.5em;
     }
     &__full{
-        opacity: 1;
+        opacity: 0;
         color: transparent;
         background-image: linear-gradient($color-primary 0%, $color-secondary 100%);
         background-clip: text;
         -webkit-background-clip: text;
         transition: opacity 0.3s ease-in-out;
         &:hover{
-            //hover en version desktop
+            cursor: pointer;
+            opacity: 1;
         }
     }
 
-}
-
-// CHECKBOX HEART FONCTIONS
-.custom-checkbox input[type="checkbox"], .custom-checkbox .checked {
-    display: none;
-}
-.custom-checkbox input[type="checkbox"]:checked ~ .checked
-{
-    display: inline-block;
-}
-.custom-checkbox input[type="checkbox"]:checked ~ .unchecked
-{
-    display: none;
 }
