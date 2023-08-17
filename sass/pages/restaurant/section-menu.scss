@@ -59,23 +59,27 @@
 }
 
 .article-plat{
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
-    align-items: center;
     max-width: 635px;
     background-color: #FFF;
-    padding: 15px;
     border-radius: 15px;
     margin-top: 12px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
     &__desc{
+        padding: 15px;
+        width: 100%;
         &--title{
             margin: 0;
             margin-bottom: 5px;
             color: #000;
             font-family: Roboto;
             font-size: 1.125rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &--subtitle{
             margin: 0;
@@ -84,12 +88,34 @@
         }
     }
     &__price{
-        align-self: flex-end;
         &--number{
+            padding-top: 40px;
             font-weight: 700;
+            padding-right: 20px;
             margin: 0;
             
         }
+    }
+    &__check{
+        position: relative;
+        background-color: $color-third;
+        color: #FFF;
+        font-size: 1.5rem;
+        border-radius: 0 15px 15px 0;
+        width: 0px; //A mettre à zéro pour que le bouton apparaisse
+        overflow: hidden;
+        transition: width 300ms ease-in-out;
+        .icone{
+            position: absolute;
+            top: 25px;
+            left: 30%;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .article-plat__check {
+        width: 80px; 
+        }  
     }
 }
 
