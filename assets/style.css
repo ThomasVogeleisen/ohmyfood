@@ -276,6 +276,7 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   transition: opacity 0.3s ease-in-out;
+  font-size: 1.5em;
 }
 .article-heart__full:hover {
   cursor: pointer;
@@ -382,12 +383,29 @@ footer {
 }
 .section-menu-header__title {
   font-family: Shrikhand;
-  font-size: 28px;
+  font-size: 2em;
   font-weight: 400;
 }
 .section-menu-header__heart {
-  align-self: center;
-  font-size: 22px;
+  margin-top: 33px;
+  margin-left: 30px;
+}
+.section-menu-header__heart .fa-heart {
+  position: absolute;
+  font-size: 2em;
+}
+.section-menu-header__heart--full {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(#9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 2em;
+}
+.section-menu-header__heart--full:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .article-menu {

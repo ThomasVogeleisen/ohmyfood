@@ -153,24 +153,16 @@
     }
 }
 
+// COEURS
 .article-heart{
     margin-top: 30px;
     margin-right: 55px;
     .fa-heart{
-        position: absolute;
-        font-size: 1.5em;
+        @include heart-empty;
+        font-size: 1.5em
     }
     &__full{
-        opacity: 0;
-        color: transparent;
-        background-image: linear-gradient($color-primary 0%, $color-secondary 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: opacity 0.3s ease-in-out;
-        &:hover{
-            cursor: pointer;
-            opacity: 1;
-        }
+        @include heart-full;
+        font-size: 1.5em
     }
-
 }

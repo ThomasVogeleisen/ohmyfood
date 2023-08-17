@@ -27,12 +27,20 @@
     }
     &__title{
         font-family: Shrikhand;
-        font-size: 28px;
+        font-size: 2em;
         font-weight: 400;
     }
     &__heart{
-        align-self: center;
-        font-size: 22px;
+        margin-top: 33px;
+        margin-left: 30px;
+        .fa-heart{
+            @include heart-empty;
+            font-size: 2em;
+        }
+        &--full{
+            @include heart-full;
+            font-size: 2em;
+        }
     }
 }
 
