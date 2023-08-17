@@ -37,15 +37,16 @@
 }
 
 .article-menu{
+    padding-bottom: 40px;
     &__bloc-title{
-        max-width: 660px;
+        max-width: 635px;
         margin: auto;
         &--title{
             font-size: 1rem;
             font-weight: 300;
             text-transform: uppercase;
             padding-bottom: 5px;
-            max-width: 660px;
+            max-width: 635px;
             margin: auto;
         }
         &--underline{
@@ -69,6 +70,9 @@
     margin-top: 12px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
     &__desc{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         padding: 15px;
         width: 100%;
         &--title{
@@ -85,11 +89,15 @@
             margin: 0;
             font-size: 0.94;
             font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
         }
     }
     &__price{
         &--number{
-            padding-top: 40px;
+            padding-top: 42px;
+            padding-left: 20px;
             font-weight: 700;
             padding-right: 20px;
             margin: 0;
@@ -101,20 +109,20 @@
         background-color: $color-third;
         color: #FFF;
         font-size: 1.5rem;
-        border-radius: 0 15px 15px 0;
-        width: 0px; //A mettre à zéro pour que le bouton apparaisse
+        min-width: 0px; //A mettre à zéro pour que le bouton apparaisse
         overflow: hidden;
-        transition: width 300ms ease-in-out;
+        transition: min-width 300ms ease-in-out;
         .icone{
             position: absolute;
             top: 25px;
-            left: 30%;
+            left: 23px;
+
         }
     }
     &:hover{
         cursor: pointer;
         .article-plat__check {
-        width: 80px; 
+        min-width: 70px; 
         }  
     }
 }
