@@ -381,7 +381,9 @@ footer {
   display: flex;
   max-width: 375px;
   margin: auto;
-  justify-content: space-around;
+  justify-content: center;
+  position: relative;
+  right: 10px;
 }
 @media (min-width: 992px) {
   .section-menu-header {
@@ -390,16 +392,16 @@ footer {
 }
 .section-menu-header__title {
   font-family: Shrikhand;
-  font-size: 2em;
+  font-size: 1.75rem;
   font-weight: 400;
+  margin-right: 25px;
 }
 .section-menu-header__heart {
-  margin-top: 33px;
-  margin-left: 30px;
+  margin-top: 30px;
 }
 .section-menu-header__heart .fa-heart {
   position: absolute;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 .section-menu-header__heart--full {
   opacity: 0;
@@ -408,7 +410,7 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   transition: opacity 0.3s ease-in-out;
-  font-size: 2em;
+  font-size: 1.5rem;
 }
 .section-menu-header__heart--full:hover {
   cursor: pointer;
