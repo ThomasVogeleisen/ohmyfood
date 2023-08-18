@@ -3,12 +3,13 @@ h1{
     flex-grow: 1;
     text-align: center;
     color: black;
-    font-family: Shrikhand;
+    font-family: Shrikhand, sans-serif;
     font-size: 30px;
     font-weight: 400;
     margin: 0;
 }
 
+//LOGO
 .bloc-logo{
     display: flex;
     position: relative;
@@ -28,6 +29,7 @@ h1{
     }
 }
 
+//LOCATION
 .bloc-map{
     display: flex;
     justify-content: center;
@@ -38,9 +40,17 @@ h1{
     &__map-icon{
         margin-top: 15px;
         margin-right: 17px;
+        margin-left: 70px;
+    }
+    &__search{
+        border: none;
+        background-color: $color-grey-2;
+        font-weight: 500;
+        font-size: 16px;
     }
 }
 
+// CTO
 .bloc-action{
     background-color: $color-grey-1;
     padding-bottom: 57px;
