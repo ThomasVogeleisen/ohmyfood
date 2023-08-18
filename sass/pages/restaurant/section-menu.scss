@@ -164,6 +164,15 @@
 .animation-desserts {
     animation: animation-menu 1000ms 700ms cubic-bezier(.2,.6,.5,1) both;
 }
+.animation-entrees-title {
+    animation: animation-title 1000ms 0ms cubic-bezier(.2,.6,.5,1) both;
+}
+.animation-plats-title {
+    animation: animation-title 1000ms 300ms cubic-bezier(.2,.6,.5,1) both;
+}
+.animation-desserts-title {
+    animation: animation-title 1000ms 600ms cubic-bezier(.2,.6,.5,1) both;
+}
 
 @keyframes animation-menu {
     0% {
@@ -171,6 +180,18 @@
     }
     70% {
         transform: translate(3%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+
+@keyframes animation-title {
+    0% {
+        transform: translate(150%);
+    }
+    70% {
+        transform: translate(-3%);
     }
     100% {
         transform: translate(0%);
