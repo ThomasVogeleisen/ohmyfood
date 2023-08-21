@@ -568,7 +568,7 @@ html, body {
 }
 .article-plat__desc--subtitle {
   margin: 0;
-  font-size: 0.94;
+  font-size: 0.94rem;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
