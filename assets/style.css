@@ -13,17 +13,23 @@ h1 {
   text-align: center;
   color: black;
   font-family: Shrikhand, sans-serif;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   margin: 0;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+  }
 }
 
 .bloc-logo {
   display: flex;
   position: relative;
+  height: 63px;
   align-items: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 14px 89px 13px 89px;
+  padding: 0px 89px 0px 89px;
 }
 .bloc-logo__back {
   position: absolute;
@@ -34,6 +40,11 @@ h1 {
 }
 .bloc-logo__back--hidden {
   display: none;
+}
+@media (min-width: 768px) {
+  .bloc-logo {
+    height: 96px;
+  }
 }
 
 .bloc-map {
