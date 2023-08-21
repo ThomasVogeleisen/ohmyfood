@@ -85,8 +85,6 @@ h1 {
   display: block;
   margin: auto;
   margin-top: 27px;
-  font-size: 1rem;
-  color: #FFF;
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -94,6 +92,10 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
   transition: opacity 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+.bloc-action__button a {
+  font-size: 1rem;
+  color: #FFF;
 }
 .bloc-action__button:hover {
   cursor: pointer;
@@ -356,6 +358,10 @@ footer {
   margin-right: 50px;
 }
 
+html, body {
+  animation: no-overflow 3s linear;
+}
+
 .content {
   opacity: 0;
   animation: show-content both 2s linear;
@@ -365,7 +371,7 @@ footer {
   position: absolute;
   display: flex;
   width: 100%;
-  height: 70%;
+  height: 80%;
   flex-direction: column;
   align-items: center;
   padding-top: 350px;
@@ -428,6 +434,14 @@ footer {
   }
   100% {
     opacity: 0.5;
+  }
+}
+@keyframes no-overflow {
+  0% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: visible;
   }
 }
 .img_restaurant {
@@ -590,8 +604,6 @@ footer {
   display: block;
   margin: auto;
   margin-top: 27px;
-  font-size: 1rem;
-  color: #FFF;
   width: 218px;
   height: 50px;
   border-radius: 25px;
@@ -599,6 +611,10 @@ footer {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
   transition: opacity 400ms ease-in-out, box-shadow 400ms ease-in-out;
+}
+.bloc-command__button a {
+  font-size: 1rem;
+  color: #FFF;
 }
 .bloc-command__button:hover {
   cursor: pointer;
