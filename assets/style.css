@@ -361,17 +361,32 @@ footer {
   animation: show-content both 2s linear;
 }
 
-.loader {
+.bloc-loader {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 350px;
   opacity: 1;
+  background-color: #F6F6F6;
+  animation: mask-loader both 2s linear;
+}
+.bloc-loader__loader {
   border: 4px solid #9356DC;
   border-top: 4px solid #FF79DA;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  animation: spin 1s linear both 2.3, mask-loader both 2s linear;
+  animation: spin 1s linear both 2.3;
+}
+.bloc-loader__txt {
+  margin-top: 50px;
+  font-weight: 500;
+  color: #353535;
+  animation: mask-loader both 2s linear;
+  animation: animation-text 1.5s ease-in-out both 2;
 }
 
 @keyframes spin {
@@ -402,6 +417,17 @@ footer {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes animation-text {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
   }
 }
 .img_restaurant {
