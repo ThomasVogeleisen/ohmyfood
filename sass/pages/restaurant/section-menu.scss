@@ -1,3 +1,4 @@
+// photo du restaurant
 .img_restaurant {
     height: 275px;
     width: 100%;
@@ -7,6 +8,7 @@
     }
 }
 
+// fiche Menu generale
 .fiche-menu{
     overflow: hidden;
     border-radius: 40px 40px 0px 0px;
@@ -18,6 +20,7 @@
     padding: 0 13px 0 13px;
 }
 
+// entete de la fiche menu
 .section-menu-header{
     display: flex;
     max-width: 375px;
@@ -47,6 +50,7 @@
     }
 }
 
+// Articles Entrees plats et desserts
 .article-menu{
     padding-bottom: 40px;
     &__bloc-title{
@@ -70,6 +74,7 @@
     }
 }
 
+// Un plat
 .article-plat{
     overflow: hidden;
     display: flex;
@@ -81,6 +86,7 @@
     margin-top: 12px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.10);
     &__desc{
+        // descrition du plat
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -105,6 +111,7 @@
             text-overflow: ellipsis
         }
     }
+    // prix
     &__price{
         &--number{
             padding-top: 42px;
@@ -115,12 +122,13 @@
             
         }
     }
+    // coche de selection
     &__check{
         position: relative;
         background-color: $color-third;
         color: #FFF;
         font-size: 1.5rem;
-        min-width: 0px; //A mettre à zéro pour que le bouton apparaisse
+        min-width: 0px;
         overflow: hidden;
         transition: min-width 300ms ease-in-out;
         .icone{
@@ -138,6 +146,7 @@
     }
 }
 
+// bouton commander
 .bloc-command{
     margin-top: -20px;
     padding-bottom: 40px;
@@ -153,8 +162,8 @@
     margin-top: -40px;
 }
 
-// ANIMATIONS
 
+// ANIMATIONS
 .animation-entrees {
     animation: animation-menu 1000ms 100ms cubic-bezier(.2,.6,.5,1) both;
 }

@@ -1,4 +1,6 @@
 //HEADER
+
+//LOGO
 h1{
     flex-grow: 1;
     text-align: center;
@@ -12,7 +14,6 @@ h1{
     }
 }
 
-//LOGO
 .bloc-logo{
     display: flex;
     position: relative;
@@ -26,9 +27,8 @@ h1{
         top: 50%;
         transform: translateY(-50%);
         color: $color-grey-3;
-        // MASQUER LE BOUTTON DE RETOUR
         &--hidden{
-            display: none;
+            display: none; // MASQUER LE BOUTTON DE RETOUR
         }
     }
     @media (min-width: 768px){
@@ -57,7 +57,7 @@ h1{
     }
 }
 
-// CTO
+// EXPLOREZ NOS RESTAURANTS
 .bloc-action{
     background-color: $color-grey-1;
     padding-bottom: 57px;

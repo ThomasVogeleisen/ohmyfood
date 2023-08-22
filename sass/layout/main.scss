@@ -19,9 +19,9 @@
             max-width: 1100px;
         }
     }
-
 }
 
+// Les 3 etapes de la section fonctionnement
 .fonctionnement-card{
     display: flex;
     justify-content: flex-start;
@@ -93,6 +93,7 @@
     }
 }
 
+// carte restaurant lien
 .restaurant-links {
     display: block;
     text-decoration: none;
@@ -106,6 +107,7 @@
     }
 }
 
+// carte restaurant contenu
 .article-restaurant {
     position: relative;
     display: flex;
@@ -121,6 +123,7 @@
         width: 100%;
         object-fit: cover;
     }
+    // Logo nouveu restaurant
     &__newlogo{
         @include box-shadows;
         position: absolute;
@@ -137,6 +140,7 @@
     }
 }
 
+// contenu texte de la carte restaurant
 .article-restaurant-content {
     display: flex;
     flex-direction: row;

@@ -1,11 +1,14 @@
+// ombres sur les boutons
 @mixin box-shadows {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
 
+// bordures arrondies dans fonctionnement
 @mixin fonctionnement-form{
   border-radius: 20px;
 }
 
+// boutons explorer et commander
 @mixin button-form{
   display: flex;
   justify-content: center;
@@ -29,10 +32,12 @@
   }
 }
 
+// coeur vide
 @mixin heart-empty{
   position: absolute;
 }
 
+// coeur plein
 @mixin heart-full{
   opacity: 0;
   color: transparent;

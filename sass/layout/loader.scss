@@ -1,12 +1,15 @@
+// Empecher le scroll pendant le chargement de la page
 html, body{
     animation: no-overflow 3s linear;
 }
 
+// masquer le contenu de la page pendant le chargement
 .content{
     opacity: 0;
     animation: show-content both 2s linear;
 }
 
+// Loader
 .bloc-loader {
     position: absolute;
     display: flex;
@@ -35,14 +38,19 @@ html, body{
     }
 }
 
+
+// -------------------LES ANIMATIONS-------------------
+
+// Animation du loader
 @keyframes spin {
     0% { 
         transform: rotate(0deg);
     }
     100% { 
         transform: rotate(360deg); }
-    }
-    
+}
+
+// masquer le loader a la fin de l'animation  
 @keyframes mask-loader {
     0% { 
         opacity: 1;
@@ -55,6 +63,7 @@ html, body{
     }
 }
 
+// afficher le contenu de la page a la fin de l'animation
 @keyframes show-content {
     0% { 
         opacity: 0;
@@ -67,6 +76,7 @@ html, body{
     }
 }
 
+// animer le texte du loader
 @keyframes animation-text {
     0% {
       opacity: 0.5;
@@ -79,12 +89,13 @@ html, body{
     }
   }
 
+// empecher le scroll pendant le chargement
 @keyframes no-overflow {
-0% {
-    overflow: hidden;
-}
+    0% {
+        overflow: hidden;
+    }
 
-100% {
-    overflow: visible;
-}
+    100% {
+        overflow: visible;
+    }
 }
