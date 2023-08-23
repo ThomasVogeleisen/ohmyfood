@@ -251,10 +251,22 @@ h1 {
 }
 .article-restaurant__img {
   display: inline;
-  height: 231px;
+  height: 175px;
   border-radius: 15px 15px 0 0;
   width: 100%;
   object-fit: cover;
+}
+.article-restaurant__img--position-la-palette-du-gout {
+  object-position: 0% 70%;
+}
+.article-restaurant__img--position-la-note-enchantee {
+  object-position: 0% 57%;
+}
+.article-restaurant__img--position-a-la-francaise {
+  object-position: 0% 70%;
+}
+.article-restaurant__img--position-le-delice-des-sens {
+  object-position: 0% 70%;
 }
 .article-restaurant__newlogo {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);

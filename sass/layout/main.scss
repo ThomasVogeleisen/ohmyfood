@@ -118,10 +118,23 @@
     border-radius: 15px;
     &__img{
         display: inline;
-        height: 231px;
+        height: 175px;
         border-radius: 15px 15px 0 0;
         width: 100%;
         object-fit: cover;
+        // Positionnement des images conformément à la maquette
+        &--position-la-palette-du-gout{
+            object-position: 0% 70%;
+        }
+        &--position-la-note-enchantee{
+            object-position: 0% 57%;
+        }
+        &--position-a-la-francaise{
+            object-position: 0% 70%;
+        }
+        &--position-le-delice-des-sens{
+            object-position: 0% 70%;
+        }
     }
     // Logo nouveu restaurant
     &__newlogo{
