@@ -39,6 +39,7 @@
 
 // coeur plein
 @mixin heart-full{
+  position: absolute;
   opacity: 0;
   color: transparent;
   background-image: linear-gradient($color-primary 0%, $color-secondary 100%);
