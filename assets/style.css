@@ -421,8 +421,7 @@ html, body {
   margin-top: 50px;
   font-weight: 500;
   color: #353535;
-  animation: mask-loader both 2s linear;
-  animation: animation-text 1.5s ease-in-out both 2;
+  animation: animation-text 1.5s ease-in-out both 2, mask-loader both 2s linear;
 }
 
 @keyframes spin {
