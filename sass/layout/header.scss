@@ -4,7 +4,7 @@
 h1{
     flex-grow: 1;
     text-align: center;
-    color: black;
+    color: &black;
     font-family: Shrikhand, sans-serif;
     font-size: 1.875rem;
     font-weight: 400;
@@ -45,9 +45,7 @@ h1{
     font-weight: 500;
     background-color: $color-grey-2;
     &__map-icon{
-        margin-top: 15px;
-        margin-right: 17px;
-        margin-left: 70px;
+        margin: 15px 17px 0 70px;
     }
     &__search{
         border: none;

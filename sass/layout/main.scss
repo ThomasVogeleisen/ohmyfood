@@ -32,8 +32,8 @@
     margin-top: 25px;
     font-weight: 500;
     background-color: $color-grey-1;
-    @include box-shadows;
-    @include fonctionnement-form;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
     &__number{
         position: relative;
         right: 13px;
@@ -43,7 +43,7 @@
         width: 24px;
         height: 24px;
         border-radius: 20px;
-        color: #FFF;
+        color: $white;
         font-size: 0.875rem;
         background: $color-primary;
     }
@@ -64,8 +64,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px;
-    padding-bottom: 68px;
+    padding: 18px 18px 68px;
     background-color: $color-grey-1;
     @media (min-width: 768px){
         padding-bottom: 0px;
@@ -112,8 +111,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
-    color: black;
+    background-color: $white;
+    color: $black;
     width: 100%;
     border-radius: 15px;
     &__img{
@@ -138,7 +137,7 @@
     }
     // Logo nouveu restaurant
     &__newlogo{
-        @include box-shadows;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
         position: absolute;
         top: 13px;
         right: 13px;
@@ -172,8 +171,7 @@
 
 // COEURS
 .article-heart{
-    margin-top: 30px;
-    margin-right: 55px;
+    margin: 30px 55px 0 0;
     &__empty{
         @include heart-empty;
         font-size: 1.5em

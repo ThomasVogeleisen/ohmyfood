@@ -1,6 +1,6 @@
 footer{
     padding: 22px 25px;
-    color: #FFF;
+    color: $white;
     background-color: $color-grey-3;
     @media (min-width: 992px){
         display: flex;
@@ -12,20 +12,19 @@ footer{
 }
 
 .footer-title{
-    color: var(--white, #FFF);
+    color: $white;
     font-family: Shrikhand;
     font-size: 1.125rem;
     font-weight: 400;
     margin: 0;
     @media (min-width: 992px){
-        padding-left: 100px;
-        padding-right: 35px;
+        padding: 0 35px 0 100px;
     }
 }
 
 .footer-links{
     text-decoration: none;
-    color: #FFF;
+    color: $white;
 }
 
 .footer-list{
