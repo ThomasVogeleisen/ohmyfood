@@ -1,9 +1,11 @@
+// Masquer contenu qui dépasse des plats
 @mixin overflow-set{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
+// Buttons Explorez nos restaurants et Commander
 @mixin button-form{
   display: flex;
   justify-content: center;
